@@ -1,0 +1,36 @@
+{
+  "name": "reload",
+  "version": "0.1.0",
+  "description": "NodeJs module to automatically reload and refresh all your connected browser instances when your code changes Edit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "set NODE_ENV=production && webpack -p",
+    "build:dev": "set NODE_ENV=development && webpack -d",
+    "build:dev:watch": "set NODE_ENV=development && webpack -d --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopfnuss/reload.git"
+  },
+  "author": "Frederik Brudy <fb@fbrudy.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kopfnuss/reload/issues"
+  },
+  "homepage": "https://github.com/kopfnuss/reload#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "http": "0.0.0",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^1.7.3"
+  }
+}
